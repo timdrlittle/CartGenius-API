@@ -19,7 +19,7 @@ The CartGenius API provides structured endpoints for:
 - Integration hooks for partner apps within the FreeCha-Ching ecosystem  
 
 ## 📞 Contact
-- **Email:** support@freechaching.com  
+- **Email:** freechachingtdl@gmail.com
 - **Legal:** [Terms of Use](https://freechaching.com/terms)
 
 💡 *More groceries, less spending. Super Stacking Savings. Cha-Ching!*
