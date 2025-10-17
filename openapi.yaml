@@ -1,0 +1,64 @@
+openapi: 3.0.1
+info:
+  title: CartGenius API
+  description: >
+    CartGenius — a grocery-shopping AI assistant powered by AgentZeroLife and integrated with FreeCha-Ching.com.
+    It helps users build smart grocery lists, discover savings, and connect to referral and cash-back programs.
+  version: 1.0.0
+servers:
+  - url: https://agentzerolife.com/cartgenius
+paths:
+  /generateList:
+    post:
+      summary: Generate a smart grocery list based on user input.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userPrompt:
+                  type: string
+                  example: "Create a grocery list for healthy breakfasts under $50."
+      responses:
+        "200":
+          description: Smart grocery list generated successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  list:
+                    type: array
+                    items:
+                      type: string
+  /findSavings:
+    get:
+      summary: Find referral or cash-back opportunities for given items.
+      parameters:
+        - name: items
+          in: query
+          schema:
+            type: string
+          required: true
+          example: "eggs, milk, bread"
+      responses:
+        "200":
+          description: List of available savings.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  savings:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        app:
+                          type: string
+                        link:
+                          type: string
+                        reward:
+                          type: string
