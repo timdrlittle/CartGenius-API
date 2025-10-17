@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "CartGenius™",
+  "name_for_model": "cartgenius",
+  "description_for_human": "Your AI-powered grocery shopping assistant that builds lists, finds deals, and stacks savings with FCC.",
+  "description_for_model": "CartGenius helps users generate smart grocery lists, discover cashback and referral stacking opportunities via FreeCha-Ching.com, and find the best deals across partner apps.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://github.com/timdrlittle/CartGenius-API/raw/main/openapi.yaml"
+  },
+  "logo_url": "https://agentzerolife.com/cartgenius/logo.png",
+  "contact_email": "support@freechaching.com",
+  "legal_info_url": "https://freechaching.com/terms"
+}
